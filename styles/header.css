@@ -1,0 +1,70 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 45px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 45px;
+    width: auto;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-selector select {
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--netflix-white);
+    padding: 8px 24px;
+    border: 1px solid var(--netflix-white);
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.sign-in-btn {
+    background-color: var(--netflix-red);
+    color: var(--netflix-white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.sign-in-btn:hover {
+    background-color: #f40612;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        height: 24px;
+    }
+
+    .language-selector select {
+        padding: 4px 16px;
+        font-size: 0.75rem;
+    }
+
+    .sign-in-btn {
+        padding: 4px 12px;
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,145 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%),
+                linear-gradient(45deg, #000000, #141414);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 8px solid #222;
+    padding: 70px 45px;
+}
+
+.hero-content {
+    max-width: 950px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+}
+
+.hero-content h2 {
+    font-size: 1.625rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.ad-banner {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--netflix-blue);
+    border-radius: 16px;
+    padding: 24px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.ad-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.popcorn-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.ad-text {
+    flex: 1;
+    text-align: left;
+}
+
+.ad-text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+}
+
+.ad-text p {
+    color: var(--netflix-light-gray);
+    font-size: 1rem;
+}
+
+.learn-more-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--netflix-white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.learn-more-btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.email-signup {
+    display: flex;
+    gap: 8px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.email-signup input {
+    flex: 1;
+    height: 60px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 1px solid var(--netflix-dark-gray);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--netflix-white);
+}
+
+.email-signup input::placeholder {
+    color: #8c8c8c;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+        min-height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.125rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .ad-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .ad-text {
+        text-align: center;
+    }
+
+    .email-signup {
+        flex-direction: column;
+    }
+
+    .email-signup input {
+        height: 48px;
+    }
+}

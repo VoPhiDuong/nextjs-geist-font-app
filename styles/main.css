@@ -1,0 +1,92 @@
+:root {
+    --netflix-red: #E50914;
+    --netflix-black: #000000;
+    --netflix-dark-gray: #222222;
+    --netflix-light-gray: #757575;
+    --netflix-white: #FFFFFF;
+    --netflix-blue: #0F1119;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--netflix-black);
+    color: var(--netflix-white);
+    line-height: 1.4;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.get-started-btn {
+    background-color: var(--netflix-red);
+    color: var(--netflix-white);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.get-started-btn:hover {
+    background-color: #f40612;
+}
+
+input[type="email"] {
+    padding: 16px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--netflix-dark-gray);
+    border-radius: 4px;
+}
+
+section {
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
+}
+
+h1 {
+    font-size: 3.125rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.email-signup {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+    }
+
+    .email-signup {
+        flex-direction: column;
+    }
+}

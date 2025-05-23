@@ -1,0 +1,183 @@
+.features {
+    padding: 70px 45px;
+    background-color: var(--netflix-black);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+    gap: 48px;
+}
+
+.feature-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    flex: 1;
+    padding: 0 48px;
+}
+
+.feature-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.feature-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.feature-image {
+    flex: 1;
+    position: relative;
+}
+
+.feature-icon {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.popcorn-icon {
+    width: 48px;
+    height: 48px;
+}
+
+/* TV Animation Container */
+.tv-container {
+    position: relative;
+}
+
+.tv-video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+    height: 54%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: 0;
+}
+
+/* Device Animation Container */
+.device-container {
+    position: relative;
+}
+
+.device-video {
+    position: absolute;
+    top: 12%;
+    left: 19%;
+    width: 62%;
+    height: 47%;
+    max-width: 62%;
+    max-height: 47%;
+    z-index: 0;
+}
+
+/* Download Feature Styles */
+.download-indicator {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    background: var(--netflix-black);
+    border: 2px solid #404040;
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.download-image {
+    width: 48px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.download-text {
+    flex: 1;
+}
+
+.download-text h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.download-text p {
+    font-size: 0.875rem;
+    color: #0071eb;
+}
+
+.download-animation {
+    width: 48px;
+    height: 48px;
+}
+
+@media (max-width: 960px) {
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+        gap: 24px;
+    }
+
+    .feature-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .feature-text {
+        padding: 0;
+    }
+
+    .feature-text h2 {
+        font-size: 2rem;
+    }
+
+    .feature-text p {
+        font-size: 1.125rem;
+    }
+
+    .download-indicator {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .features {
+        padding: 50px 20px;
+    }
+
+    .feature-text h2 {
+        font-size: 1.625rem;
+    }
+
+    .feature-text p {
+        font-size: 1rem;
+    }
+
+    .download-indicator {
+        width: 90%;
+        padding: 6px 8px;
+    }
+
+    .download-image {
+        width: 36px;
+        height: 45px;
+    }
+
+    .download-animation {
+        width: 36px;
+        height: 36px;
+    }
+}
